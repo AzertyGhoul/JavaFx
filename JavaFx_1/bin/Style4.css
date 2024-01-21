@@ -1,0 +1,51 @@
+#button1 {
+    -fx-background-color: #585b70;
+    -fx-border-color: #1e1e2e;
+    -fx-border-width: 5;
+    -fx-border-radius: 6;
+}
+
+#button1:hover {
+    -fx-border-color: #313244;
+}
+#button1:pressed {
+    -fx-border-color: #45475a;
+}
+#textArea {
+    -fx-font-size: 14px;
+    -fx-border-width: 5;
+    -fx-border-color: #1e1e2e;
+}
+#toolPane {
+    -fx-background-color: #585b70;
+    -fx-border-color: #1e1e2e;
+    -fx-border-width: 5;
+}
+
+#circleButton {
+    -fx-fill: #585b70;
+    -fx-border-color: #1e1e2e;
+    -fx-border-width: 5;
+}
+#circleButton:hover {
+    -fx-fill: #313244;
+}
+#circleButton:pressed {
+    -fx-fill: #1e1e2e;
+}
+
+#checkBox:selected {
+    -fx-text-fill: #313244;
+}
+
+#checkBox {
+    -fx-text-fill: #1e1e2e;
+}
+
+.list-cell:odd {
+    -fx-background-color: #313244;
+}
+
+.list-cell:even {
+    -fx-background-color: #1e1e2e;
+}

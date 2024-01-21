@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@Style1.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SampleController">
+   <top>
+      <HBox fx:id="toolPane" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="90.0" prefWidth="150.0">
+               <children>
+                  <RadioButton fx:id="selRadio" mnemonicParsing="false" onAction="#handleRadioButton" onMouseEntered="#handleMouseEnter" prefHeight="17.0" prefWidth="109.0" selected="true" text="Style1">
+                     <padding>
+                        <Insets bottom="5.0" />
+                     </padding>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="Style" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="selRadio" mnemonicParsing="false" onAction="#handleRadioButton" onMouseEntered="#handleMouseEnter" prefHeight="17.0" prefWidth="290.0" text="Style2" toggleGroup="$Style">
+                     <padding>
+                        <Insets bottom="5.0" />
+                     </padding>
+                  </RadioButton>
+                  <RadioButton fx:id="selRadio" mnemonicParsing="false" onAction="#handleRadioButton" onMouseEntered="#handleMouseEnter" prefHeight="17.0" prefWidth="97.0" text="Style3" toggleGroup="$Style">
+                     <padding>
+                        <Insets bottom="5.0" />
+                     </padding>
+                  </RadioButton>
+                  <RadioButton fx:id="selRadio" mnemonicParsing="false" onAction="#handleRadioButton" onMouseEntered="#handleMouseEnter" text="Style4" toggleGroup="$Style">
+                     <padding>
+                        <Insets bottom="5.0" />
+                     </padding>
+                  </RadioButton>
+               </children>
+               <padding>
+                  <Insets left="20.0" right="40.0" top="10.0" />
+               </padding>
+            </VBox>
+            <Button fx:id="button1" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#handleButtonOnPress" onMouseEntered="#handleMouseEnter" prefHeight="35.0" prefWidth="65.0" text="Button">
+               <HBox.margin>
+                  <Insets left="80.0" top="35.0" />
+               </HBox.margin>
+            </Button>
+            <CheckBox fx:id="checkBox" minWidth="76.0" mnemonicParsing="false" onMouseEntered="#handleMouseEnter" prefHeight="20.0" prefWidth="93.0" text="CheckBox">
+               <HBox.margin>
+                  <Insets left="10.0" top="43.0" />
+               </HBox.margin>
+            </CheckBox>
+            <Circle fx:id="circleButton" fill="DODGERBLUE" onMouseClicked="#handle" onMouseEntered="#handleMouseEnter" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+               <HBox.margin>
+                  <Insets left="140.0" top="33.0" />
+               </HBox.margin>
+            </Circle>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <ListView fx:id="List" fixedCellSize="87.1" onMouseEntered="#handleMouseEnter" prefHeight="248.0" prefWidth="148.0" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <TextArea fx:id="textArea" onMouseEntered="#handleMouseEnter" prefHeight="200.0" prefWidth="301.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <TextField fx:id="textField" onMouseEntered="#handleMouseEnter" prefHeight="52.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
